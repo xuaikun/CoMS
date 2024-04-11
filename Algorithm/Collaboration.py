@@ -31,7 +31,7 @@ task_dependence[2] = np.argsort(ACC[2, :])
 task_dependence[3] = np.argsort(ACC[3, :])
 task_dependence[4] = np.argsort(ACC[4, :])
 
-file_path = "/home/yourpath/CoMS/opensource" # your absolute path
+file_path = "/home/yourpath/CoMS" # your absolute path
 Server_0_state =  np.loadtxt(os.path.join(file_path, "Result", "Server_0_state.txt"), dtype=np.float)
 Server_1_state =  np.loadtxt(os.path.join(file_path, "Result", "Server_1_state.txt"), dtype=np.float)
 Server_2_state =  np.loadtxt(os.path.join(file_path, "Result", "Server_2_state.txt"), dtype=np.float)
@@ -214,9 +214,9 @@ print("total_avg_accLoss_sum =", total_avg_accLoss_sum)
 print("total_tradeoff_accLoss_dnncost =", total_tradeoff_accLoss_dnncost)
 
 
-path0 = f'/home/yourpath/CoMS/opensource/Result/avg_dnncost_sum_list.txt'
-path1 = f'/home/yourpath/CoMS/opensource/Result/avg_accLoss_sum_list.txt'
-path2 = f'/home/yourpath/CoMS/opensource/Result/tradeoff_accLoss_dnncost_list.txt'
+path0 = f'/home/yourpath/CoMS/Result/avg_dnncost_sum_list.txt'
+path1 = f'/home/yourpath/CoMS/Result/avg_accLoss_sum_list.txt'
+path2 = f'/home/yourpath/CoMS/Result/tradeoff_accLoss_dnncost_list.txt'
 
 np.savetxt(path0, avg_dnncost_sum_list, fmt='%0.4f')
 np.savetxt(path1, avg_accLoss_sum_list, fmt='%0.4f')
